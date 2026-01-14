@@ -1,29 +1,39 @@
-“Real-time Study Room” (WebSocket chat + presence + file drop)
+# Real-time Study Room
 
-A web app where people join a room with a code and can:
+A real-time web app where users can join a room with a code and:
 
-chat in real time
+- 💬 Chat in real time (WebSockets)
+- 👥 See who’s currently online (“presence”)
+- 🔗 Share links (optional)
+- 📎 Send small files (optional)
+- ✋ Use quick actions like “raise hand” / reactions (optional)
 
-see who’s currently online (“presence”)
+---
 
-optionally send small files or links
+## Tech Stack
 
-optionally do “ping” / “raise hand” / reactions
+- **Backend:** Go (WebSockets + REST)
+- **Frontend:** TypeScript (Vite)
+- **Networking:** WebSocket protocol
 
-STEPS:
+---
 
-**Run the Go backend **
-'''
-steps:
-    cd server
-    go mod download
-    go run .
-'''
+## Getting Started
 
-**Run the TypeScript client (in a second terminal) **
-'''
-steps:
-    cd web
-    npm install
-    npm run dev
-'''
+### Prerequisites
+Make sure you have installed:
+- [Go](https://go.dev/dl/)
+- [Node.js (LTS)](https://nodejs.org/)
+- Git
+
+---
+
+## Run Locally
+
+### 1) Start the Go backend
+In one terminal:
+
+```bash
+cd server
+go mod download
+go run .
