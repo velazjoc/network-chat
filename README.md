@@ -37,3 +37,15 @@ In one terminal:
 cd server
 go mod download
 go run .
+```
+---
+### 2) Start the Typescript client
+In another terminal:
+
+```bash
+cd web
+npm install
+npm run dev
+```
+
+.
